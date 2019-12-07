@@ -10,9 +10,6 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN mkdir /buildbot/build
-
 USER buildbot
-WORKDIR /buildbot/build
 
 ENV WORKER_ENVIRONMENT_BLACKLIST WORKERPASS
