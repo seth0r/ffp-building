@@ -1,0 +1,3 @@
+workers = {
+   'workername': 'workerpassword',
+}
