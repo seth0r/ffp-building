@@ -16,5 +16,3 @@ USER buildbot
 WORKDIR /buildbot/build
 
 ENV WORKER_ENVIRONMENT_BLACKLIST WORKERPASS
-
-CMD ["/usr/bin/dumb-init", "twistd", "--pidfile=", "-ny", "/buildbot/buildbot.tac"]
