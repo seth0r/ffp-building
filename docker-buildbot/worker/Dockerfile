@@ -1,4 +1,4 @@
-FROM buildbot/buildbot-worker:v2.1.0
+FROM buildbot/buildbot-worker:latest
 
 USER 0
 
