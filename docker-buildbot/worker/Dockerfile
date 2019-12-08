@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
+RUN curl https://raw.githubusercontent.com/buildbot/buildbot/master/worker/docker/buildbot.tac -Lo /buildbot/buildbot.tac
+
 USER buildbot
 
 ENV WORKER_ENVIRONMENT_BLACKLIST WORKERPASS
