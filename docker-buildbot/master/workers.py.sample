@@ -1,3 +1,5 @@
-workers = {
-   'workername': 'workerpassword',
-}
+from buildbot.plugins import worker
+
+workers = [
+   worker.Worker('name', 'password', max_builds=2, properties={'cpus_per_build':2}),
+]
